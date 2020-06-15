@@ -1,0 +1,158 @@
+body {
+    color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    line-height: 2;
+}
+
+h3 {
+    text-align: center;
+    color: #bc81e0;
+    margin-bottom: 3em;
+}
+
+.container-fluid {
+    color: black;
+    width: 70%;
+    line-height: 3;
+}
+
+.navbar-inverse {
+    background-color: #1b254d
+}
+
+body,
+html {
+    height: 100%;
+    color: black;
+}
+
+body {
+    padding-top: 50px;
+}
+
+.wide {
+    width: 100%;
+    height: 500px;
+    background-image: url('../../Public/img/parc-national-denali-alaska.jpg');
+    background-size: cover;
+}
+
+.wide img {
+    width: 100%;
+}
+
+.logo {
+    color: #fff;
+    font-weight: 800;
+    font-size: 14pt;
+    padding: 25px;
+    text-align: center;
+}
+
+.line {
+    padding-top: 20px;
+    white-space: no-wrap;
+    overflow: hidden;
+    text-align: center;
+}
+
+#Billet,
+#Chapitres,
+#Livres,
+#Contact {
+    margin-top: 10em;
+}
+
+#Contact,
+#Livres {
+    color: black;
+}
+
+.reseauxSociaux {
+    text-align: center;
+    padding: 5px;
+    background-color: #1b254d;
+    border-top: 1px solid;
+    margin-top: 5em;
+}
+
+.reseauxSociaux .social {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+    width: 5.125rem;
+    height: 5.125rem;
+    border: 0.125rem solid transparent;
+    padding: 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fefefe;
+    font-size: 1.5625rem;
+    font-weight: normal;
+    line-height: 2em;
+    border-radius: 1.6875rem;
+    transition: all 0.5s ease;
+    margin-right: 0.25rem;
+    margin-bottom: 0.25rem;
+    background: #5b547e;
+}
+
+.reseauxSociaux .social:hover,
+.reseauxSociaux .social:focus {
+    -webkit-transform: rotate(360deg);
+    -ms-transform: rotate(360deg);
+    transform: rotate(360deg);
+}
+
+.reseauxSociaux .fa-twitter,
+.fa-facebook-f,
+.fa-linkedin,
+.fa-youtube,
+.fa-instagram {
+    font-size: 25px;
+    margin-top: 25%;
+    color: white;
+}
+
+.reseauxSociaux .social.facebook:hover,
+.reseauxSociaux .social.facebook:focus {
+    color: #3b5998;
+    background: #3b5998;
+    border-color: #3b5998;
+}
+
+.reseauxSociaux .social.twitter:hover,
+.reseauxSociaux .social.twitter:focus {
+    color: #55acee;
+    background: #55acee;
+    border-color: #55acee;
+}
+
+.reseauxSociaux .social.linkedin:hover,
+.reseauxSociaux .social.linkedin:focus {
+    color: #007bb5;
+    background: #007bb5;
+    border-color: #007bb5;
+}
+
+.reseauxSociaux .social.instagram:hover,
+.reseauxSociaux .social.instagram:focus {
+    color: #ff0147;
+    background: #ff0147;
+    border-color: #ff0147;
+}
+
+.galerie,
+.chapitre {
+    margin-bottom: 10px;
+}
+
+#message {
+    height: 350px !important;
+    ;
+}
