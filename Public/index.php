@@ -1,7 +1,8 @@
 <?php
 
-require '../config/dev.php';
-require '../vendor/autoload.php';
+require dirname(__DIR__) . '/controller/Backend/bddID.php';
+require dirname(__DIR__) . '/vendor/autoload.php';
 
-$router = new \App\config\Router();
+session_start();
+$router = new \App\model\Router();
 $router->run();

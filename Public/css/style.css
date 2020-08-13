@@ -1,7 +1,4 @@
 body {
-    color: white;
-    background-size: cover;
-    background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: 'Open Sans', sans-serif;
@@ -9,16 +6,95 @@ body {
     line-height: 2;
 }
 
+p {
+    margin: 0 0 10px;
+    font-weight: 900;
+}
+
+h1 {
+    text-align: center;
+    color: #ffffff;
+}
+
+h2 {
+    text-align: center;
+    color: #bc81e0;
+    margin: 20px 0px 72px;
+    font-size: 21px;
+}
+
 h3 {
     text-align: center;
     color: #bc81e0;
-    margin-bottom: 3em;
+    margin-bottom: 4em;
+}
+
+h4 {
+    text-align: center;
+    color: #bc81e0;
 }
 
 .container-fluid {
     color: black;
-    width: 70%;
-    line-height: 3;
+    width: 90%;
+    text-align: center;
+    line-height: 2.5;
+    font-weight: 900;
+}
+
+.menuDeroulant {
+    float: left;
+    overflow: hidden;
+}
+
+.menuDeroulant .menuBtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 7px 16px;
+    background-color: inherit;
+    font-family: inherit;
+    margin: 0;
+    cursor: pointer;
+}
+
+.navbar a:hover,
+.menuDeroulant:hover .menuBtn {
+    background-color: #121935;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus,
+.navbar-inverse .navbar-nav>li>a:hover {
+    color: #fff;
+    background-color: #121935;
+}
+
+.index {
+    display: none;
+    position: absolute;
+    background-color: #1b254d;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    border: black 3px solid;
+}
+
+.index a {
+    float: none;
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.index a:hover {
+    background-color: #121935;
+}
+
+.menuDeroulant:hover .index {
+    display: block;
 }
 
 .navbar-inverse {
@@ -28,7 +104,6 @@ h3 {
 body,
 html {
     height: 100%;
-    color: black;
 }
 
 body {
@@ -38,34 +113,226 @@ body {
 .wide {
     width: 100%;
     height: 500px;
-    background-image: url('../../Public/img/parc-national-denali-alaska.jpg');
+    background-image: url('../img/parc-national-denali-alaska.jpg');
     background-size: cover;
+    z-index: 1;
 }
 
 .wide img {
     width: 100%;
 }
 
+#BlocPages h1 {
+    position: relative;
+    margin-top: -6%;
+    -webkit-text-stroke: 1px;
+    -webkit-text-stroke-color: black;
+    font-size: 20pt;
+    font-weight: 800;
+    margin-bottom: 4%;
+}
+
 .logo {
     color: #fff;
     font-weight: 800;
-    font-size: 14pt;
-    padding: 25px;
+    font-size: 22pt;
+    padding: 55px 0px;
     text-align: center;
 }
 
+.wide hr {
+    width: 85%;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 1;
+    border-top: 2pt solid #eee;
+}
+
 .line {
-    padding-top: 20px;
+    padding-top: 85px;
     white-space: no-wrap;
     overflow: hidden;
     text-align: center;
 }
 
-#Billet,
-#Chapitres,
-#Livres,
-#Contact {
-    margin-top: 10em;
+.blocAccroche {
+    line-height: 2.5;
+    padding-right: 26px;
+    padding-left: 26px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 90%;
+    height: 350px;
+}
+
+.Billets {
+    display: flex;
+    flex-direction: column;
+}
+
+.Billets img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20em;
+    margin-bottom: 4em;
+    border: 2px solid #d2d2d2;
+}
+
+.Billets figure {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 4em;
+    text-align: center;
+}
+
+.Billets figcaption:hover {
+    border: 1px solid #efefef;
+    background-color: #f9f9f9;
+    transition: transform .2s;
+    border: 1px solid #d2d2d2;
+    margin-top: 20px;
+}
+
+.DernierBillet {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 2.5;
+    width: 90%;
+}
+
+.DernierBillet img {
+    width: 150px;
+}
+
+.DernierBillet img:hover {
+    transform: scale(1.1);
+    transition: transform .2s;
+    border: 5px solid #d2d2d2;
+}
+
+.DernierBillet figure {
+    width: 100%;
+}
+
+#Billet {
+    background-color: rgb(245, 245, 245);
+    z-index: 2;
+    height: 400px;
+}
+
+#Billet:hover {
+    background-color: lavender;
+}
+
+.BilletsIndex {
+    line-height: 4;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -22px;
+    background-color: rgb(245, 245, 245);
+}
+
+.BilletsIndex:hover {
+    background-color: lavender;
+}
+
+.BilletsAccueil {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.BilletsAccueil {
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+}
+
+.BilletsAccueil img {
+    width: 150px;
+}
+
+.BilletsAccueil figure {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-responsive:hover {
+    transform: scale(2);
+    transition: transform .2s;
+    margin-bottom: 17%;
+    border: 3px solid #d2d2d2;
+}
+
+.img-responsive {
+    width: 100px;
+    height: 130px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.img-bio {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#comments {
+    text-align: center;
+    border: 2em solid #31438a;
+    background-color: #31438a;
+}
+
+.comment {
+    text-align: center;
+    border: 5px solid #31438a;
+    background-color: #fffceb;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 10px;
+    width: 65em;
+}
+
+.chapitres {
+    text-align: center;
+    background-color: #fff8f4;
+    border: 2px solid #f1efed;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 80px;
+}
+
+.btn-primary:hover {
+    color: #fff;
+    background-color: #1b254d;
+    border-color: #000000;
+    transition-duration: 0.35s;
+    transform: scale(1.2);
+    transition: transform .2s;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #5b547e;
+    border-color: #7101c3;
+    margin: 0px 0px 15px;
+}
+
+.btn.focu #Billet {
+    background-color: #f7f7f7a1;
+    line-height: 2.5;
 }
 
 #Contact,
@@ -73,12 +340,33 @@ body {
     color: black;
 }
 
+#livresAccueil {
+    height: 430px;
+    margin-top: -22px;
+    padding: 3px;
+}
+
+#livresAccueil:hover {
+    background-color: lavender;
+}
+
+#Bio {
+    margin-bottom: 5em;
+}
+
+.form-box {
+    margin-bottom: 5em;
+}
+
+#submit {
+    display: none;
+}
+
 .reseauxSociaux {
     text-align: center;
     padding: 5px;
     background-color: #1b254d;
     border-top: 1px solid;
-    margin-top: 5em;
 }
 
 .reseauxSociaux .social {
@@ -155,4 +443,21 @@ body {
 #message {
     height: 350px !important;
     ;
+}
+
+@media screen and (max-width: 425px) {
+    .wide {
+        width: 124%;
+    }
+    .Billets img {
+        width: 15em;
+    }
+    #Livres,
+    #Contact,
+    #Bio {
+        width: 120%;
+    }
+    footer {
+        width: 124%;
+    }
 }
